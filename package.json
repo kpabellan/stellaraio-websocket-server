@@ -1,0 +1,19 @@
+{
+  "name": "stellaraio-websocket-server",
+  "version": "1.0.0",
+  "description": "A websocket server made for StellarAIO monitors.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "kpabellan",
+  "license": "MIT",
+  "dependencies": {
+    "arraybuffer-to-string": "^1.0.2",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v19.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpabellan/stellaraio-websocket-server"
+  }
+}
