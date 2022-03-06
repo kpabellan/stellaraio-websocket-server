@@ -37,8 +37,8 @@ const app = uWS.App().ws('/ws', {
     if (!openConnections.find((socket, index) => {
       return socket && socket.key === ws.key;
     })) {
-      keyData = fs.readFileSync('keys.txt', 'UTF-8');
-      keys = keyData.split(/\r?\n/);
+      let keyData = fs.readFileSync('keys.txt', 'UTF-8');
+      let keys = keyData.split(/\r?\n/);
 
       if (keys.includes(`${ws.key}`) || keyIsVerified(`${ws.key}`)) {
         openConnections.push(ws);
