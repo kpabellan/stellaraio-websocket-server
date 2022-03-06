@@ -6,7 +6,7 @@ A websocket server made for StellarAIO monitors.
 
 ## Example payload
 
-```json
+```javascript
 let productInfo = {
   site: '', // Required
   sku: '', // Required
