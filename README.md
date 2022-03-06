@@ -19,4 +19,4 @@ let productInfo = {
     productTitle: '', // Optional
     productImage: '' // Optional
   }
-}```
+}
