@@ -10,7 +10,7 @@ A websocket server made for StellarAIO monitors.
 let productInfo = {
   site: '', // Required
   sku: '', // Required
-  asin: '', // Required For The Time Being (Same as sku)
+  asin: '', // Required for the time being (same as sku)
   offerId: '', // Only required for certain sites / modes
   details: {
     region: '', // Required (USA, CA, EU, etc)
