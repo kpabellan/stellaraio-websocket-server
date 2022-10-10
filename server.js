@@ -56,12 +56,11 @@ const app = uWS.App().ws('/ws', {
     }
   },
   message: (ws, data) => {
-    let stockInfo = JSON.parse(abconv(data));
-    let productInfo = stockInfo.productInfo;
+    let productInfo = JSON.parse(abconv(data));
 
     try {
       if (keyIsVerified(`${ws.key}`)) {
-        console.log("Recieved stock info, broadcasting...");
+        console.log("Recieved product info, broadcasting...");
         broadcastUpdate(productInfo);
       } else {
         console.log("Error, message from unauthorized key");
